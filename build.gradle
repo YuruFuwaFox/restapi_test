@@ -21,6 +21,9 @@ configurations {
 
 repositories {
 	mavenCentral()
+	maven {
+		url 'https://repo.spring.io/libs-milestone'
+	}
 }
 
 dependencies {
@@ -31,4 +34,7 @@ dependencies {
 	runtimeOnly 'mysql:mysql-connector-java'
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+	compile "org.springframework.social:spring-social-web:1.1.6.RELEASE"
+	compile 'org.springframework.social:spring-social-github:1.0.0.M4'
 }
