@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+<h1>Home</h1>
+<img th:src="'https://avatars.githubusercontent.com/' + ${userProfile.getUsername()}"/>
+<p th:text="${userProfile.getUsername()}"></p>
+<a th:href="@{/logout}">Logout</a>
+</body>
+</html>
