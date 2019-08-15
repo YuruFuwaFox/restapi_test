@@ -1,7 +1,6 @@
 package com.example.restTest.Controller;
 
 import com.example.restTest.Service.GitHubService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.social.github.api.GitHubUserProfile;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
